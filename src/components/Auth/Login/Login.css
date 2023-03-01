@@ -14,10 +14,57 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 7rem;
+    transition: all .3s ease-in-out;
 }
 
 .loginForm h5{
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.loginField{
+    margin-top: 2rem;
+    width: 30%;
+    color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--primaryColor);
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.loginField input{
+    width: 100%;
+    /* padding: 1rem; */
+    border: none;
+    outline: none;
+}
+
+.forgotLink{
+    transform: translateX(7rem);
+    font-size: .9rem;
+    margin-top: 1rem;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.loginBtn{
+    margin-top: 3em;
+    
+}
+.loginBtn button{
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    transition: all 0.3s ease;
+    padding: 1rem 5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4rem;
+}
+
+.loginForm h6{
+    margin-top: 5rem;
 }

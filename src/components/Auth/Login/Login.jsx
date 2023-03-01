@@ -2,6 +2,8 @@ import React from 'react'
 import './Login.css';
 
 import { RiLockFill, RiMailFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
+import Footer from '../../utils/Footer/Footer';
 
 const Login = () => {
     return (
@@ -25,8 +27,18 @@ const Login = () => {
                 <input type="password" placeholder="Password" />
             </div>
 
+            <span className="forgotLink">Forgot Password?</span>
+
+            <div className="loginBtn">
+                <button>Sign In</button>
+            </div>
+
+            <h6>New To United Dorms? <Link to="/register">Sign Up</Link></h6>
 
         </div>
+
+
+        <Footer/>
         
         </>
     )
