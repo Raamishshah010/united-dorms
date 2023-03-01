@@ -55,7 +55,7 @@
     margin-top: 3em;
     
 }
-.loginBtn button{
+.loginBtn .signInBtn{
     background-color: var(--primaryColor);
     border: 1px solid var(--primaryColor);
     transition: all 0.3s ease;
@@ -63,8 +63,14 @@
     font-size: 1rem;
     color: #fff;
     border-radius: 4rem;
+    text-decoration: none;
 }
 
 .loginForm h6{
     margin-top: 5rem;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--primaryColor);
 }
