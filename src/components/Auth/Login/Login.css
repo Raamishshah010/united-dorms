@@ -1,0 +1,23 @@
+.LoginNavbar{
+    background-color: var(--primaryColor);
+    height: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.loginForm h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
