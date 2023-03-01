@@ -61,3 +61,22 @@
 .fIcon {
     transform: translateY(-2px);
 }
+
+
+.quickLinks{
+    list-style: none;
+    font-size: .9rem;
+    color: #9b97a7;
+}
+
+.quickLinks li{
+    margin-top: .4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.quickLinkText{
+    color: #9b97a7;
+    font-size: 1rem;
+    margin-left: 1.7rem;
+}

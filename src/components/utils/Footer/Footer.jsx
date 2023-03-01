@@ -40,7 +40,37 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className="col-sm-12 col-md-7 col-sm-7">Hello</div>
+                    <div className="col-sm-12 col-md-7 col-sm-7 pt-4">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-6 col-lg-4">
+                    <p className="quickLinkText">Quick Links</p>
+
+                            <ul className="quickLinks">
+                                <li>Home</li>
+                                <li>Gallery</li>
+                                <li>Staff</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+                        <div className="col-sm-12 col-md-6 col-lg-4 mt-5">
+                        <ul className="quickLinks">
+                                <li>Vision</li>
+                                <li>Mission</li>
+                                <li>Join Us</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div className="col-sm-12 col-md-6 col-lg-4 mt-5">
+                        <ul className="quickLinks">
+                                <li>Privacy & Terms</li>
+                                <li>Google</li>
+                                <li>Alphabet</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
                 </div>
                 <hr />
                 <p className="copyright">Copyright 2023 United Dorms. All rights reserved.</p>
