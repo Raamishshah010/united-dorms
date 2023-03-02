@@ -2,7 +2,8 @@ import React from 'react';
 import "./Home.css"
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-
+import Footer from '../utils/Footer/Footer';
+import { FiArrowRight } from "react-icons/fi";
 
 // IMAGES
 
@@ -14,7 +15,7 @@ import why1 from './assets/why1.jpg';
 import why2 from './assets/why2.jpg';
 import why3 from './assets/why3.jpg';
 import why4 from './assets/why4.jpg';
-import Footer from '../utils/Footer/Footer';
+
 
 
 
@@ -189,8 +190,96 @@ const Home = () => {
             </section>
 
 
-            {/*  */}
+            {/* Testimonials */}
 
+
+            {/* BLOGS */}
+
+
+            <section className="blogs">
+
+                <div className="container">
+                    <div className="featuredBlog">
+                        <h5>Featured Blog</h5>
+                    </div>
+
+                    <div className="row">
+
+                        <div className="col-sm-12 col-md-6 col-lg-4">
+                            <div className="blogCard">
+                                <div className="blogCardImg">
+                                    <span className="blogCardBadge">Student</span>
+                                    <img src={why4} className="img-fluid" alt="" />
+                                </div>
+                                <div className="blogCardContent">
+                                    <Link className="cardLink" to="/blog-detail"> <h5>Put a simple title here in this space</h5></Link>
+
+                                    <div className="contentBottom">
+                                        <p>7 mins read - September 20</p>
+                                        <div className="cardIcon">
+                                            <span >
+                                                <FiArrowRight className="icon"/>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-4">
+                            <div className="blogCard">
+                                <div className="blogCardImg">
+                                    <span className="blogCardBadge">Student</span>
+                                    <img src={why4} className="img-fluid" alt="" />
+                                </div>
+                                <div className="blogCardContent">
+                                    <Link className="cardLink" to="/blog-detail"> <h5>Put a simple title here in this space</h5></Link>
+
+                                    <div className="contentBottom">
+                                        <p>7 mins read - September 20</p>
+                                        <div className="cardIcon">
+                                            <span >
+                                                <FiArrowRight className="icon"/>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-4">
+                            <div className="blogCard">
+                                <div className="blogCardImg">
+                                    <span className="blogCardBadge">Student</span>
+                                    <img src={why4} className="img-fluid" alt="" />
+                                </div>
+                                <div className="blogCardContent">
+                                    <Link className="cardLink" to="/blog-detail"> <h5>Put a simple title here in this space</h5></Link>
+
+                                    <div className="contentBottom">
+                                        <p>7 mins read - September 20</p>
+                                        <div className="cardIcon">
+                                            <span >
+                                                <FiArrowRight className="icon"/>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                </div>
+            </section>
 
 
             {/* Footer */}
