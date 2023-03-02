@@ -3,6 +3,17 @@ import "./Home.css"
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
+
+// IMAGES
+
+import star from './assets/star.png';
+import map from './assets/map.png';
+import creditCard from './assets/creditCard.png';
+import crown from './assets/crown.png';
+import why1 from './assets/why1.png';
+
+
+
 const Home = () => {
     return (
         <>
@@ -38,7 +49,7 @@ const Home = () => {
 
                     <div className="heroBtn">
                         <button className='heroButtonOne'>Book Now</button>
-                        <button className='heroButtonTwo'>Book Now</button>
+                        <button className='heroButtonTwo'>Learn More</button>
                     </div>
                 </div>
             </section>
@@ -54,24 +65,102 @@ const Home = () => {
 
 
                     <div className="row">
+
+
                         <div className="col-sm-12 col-md-6 col-lg-3">
                             <div className="featureCard">
                                 <div className="featureCardImg">
-
+                                    <img src={star} alt="" />
                                 </div>
 
                                 <div className="featureCardContent">
-                                    <h5>New Title</h5>
+                                    <h5>Otel Konspeti</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab error voluptatem porro animi optio dolor sit.</p>
                                 </div>
 
                             </div>
                         </div>
+
+
+                        <div className="col-sm-12 col-md-6 col-lg-3">
+                            <div className="featureCard">
+                                <div className="featureCardImg">
+                                    <img src={map} alt="" />
+                                </div>
+
+                                <div className="featureCardContent">
+                                    <h5>Otel Konspeti</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab error voluptatem porro animi optio dolor sit.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-3">
+                            <div className="featureCard">
+                                <div className="featureCardImg">
+                                    <img src={creditCard} alt="" />
+                                </div>
+
+                                <div className="featureCardContent">
+                                    <h5>Otel Konspeti</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab error voluptatem porro animi optio dolor sit.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-3">
+                            <div className="featureCard">
+                                <div className="featureCardImg">
+                                    <img src={crown} alt="" />
+                                </div>
+
+                                <div className="featureCardContent">
+                                    <h5>Otel Konspeti</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab error voluptatem porro animi optio dolor sit.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
                         
                     </div>
 
 
 
+                </div>
+            </section>
+
+
+            {/* What We Do Section */}
+
+            <section className="whatWeDo">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-6">
+                            <div className="whatWeDoContent">
+                                <h1>What We Do?</h1>
+                                <br />
+                                <br />
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia deleniti delectus obcaecati in, consequuntur, similique, commodi sed dicta aspernatur voluptas veritatis beatae odit magnam molestias exercitationem veniam consectetur nostrum!</p>
+
+                                <button className='heroButtonOne mt-5'>Book Now</button>
+                            </div>
+                        </div>
+                        <div className="col-sm-12 col-md-12 col-lg-6">
+                            <div className="row">
+                                <div className="col-sm-12 col-md-6 col-lg-6">
+                                    <div className="why1">
+                                        <img src={why1} alt="" />
+                                    </div>
+                                </div>
+                                <div className="col-sm-12 col-md-6 col-lg-6">Hello</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
