@@ -20,7 +20,7 @@ const Blogs = () => {
                         <Nav className="me-auto navLinks">
                             <Nav.Link className="navLink "><Link className="navText" to="/">Home</Link></Nav.Link>
 
-                            <Nav.Link className="navLink"><Link className="navText" to="/">Gallery</Link></Nav.Link>
+                            <Nav.Link className="navLink"><Link className="navText" to="/gallery">Gallery</Link></Nav.Link>
 
                             <Nav.Link className="navLink"><Link className="navText" to="/">Testimonials</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/">About</Link></Nav.Link>
