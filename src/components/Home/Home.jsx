@@ -42,6 +42,18 @@ const Home = () => {
             </div>
             </div>
             </section>
+
+            {/* FEATURE SECTION */}
+
+            <section className="feature">
+                <div className="container">
+                    <div className="featureBadge">
+                        <h6>Features</h6>
+                    </div>
+                        <h1>The Comfort Of Your <span className='link'>Home</span></h1>
+                </div>
+            </section>
+
         </>
     )
 }
