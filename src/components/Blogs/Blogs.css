@@ -8,3 +8,33 @@
 .heading{
     color: var(--primaryColor);
 }
+.mainBlog{
+    margin-top: 5rem;
+}
+
+
+.mainBlogsCard{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.mainBlogsCard img{
+    width: 500px;
+}
+
+.mainBlogsCard h1{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: var(--headingColor);
+}
+.mainBlogsCard h6{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: .6rem;
+    color: var(--headingColor);
+}

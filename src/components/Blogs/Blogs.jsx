@@ -35,6 +35,55 @@ const Blogs = () => {
 
 
 
+        {/* Main Blog */}
+        <section className="mainBlog">
+            <div className="container">
+                <div className="mainBlogsCards">
+
+                    <div className="mainBlogsCard">
+                        <div className="mainBlogsCardContent">
+                            <h6>Students</h6>
+                            <h1>Meet New Faces</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis harum adipisci doloremque beatae nam obcaecati consequuntur illum, autem voluptatibus est esse vitae aut reprehenderit soluta quod molestiae asperiores facere. <span><Link className="link" to='/blog-detail'>Read More</Link></span> </p> 
+                        </div>
+                        <div className="mainBlogsCardImg">
+                            <img src={why4} alt="" />
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div className="mainBlogsCard">
+                        <div className="mainBlogsCardContent">
+                            <h6>Students</h6>
+                            <h1>Meet New Faces</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis harum adipisci doloremque beatae nam obcaecati consequuntur illum, autem voluptatibus est esse vitae aut reprehenderit soluta quod molestiae asperiores facere. <span><Link className="link" to='/blog-detail'>Read More</Link></span> </p> 
+                        </div>
+                        <div className="mainBlogsCardImg">
+                            <img src={why4} alt="" />
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div className="mainBlogsCard">
+                        <div className="mainBlogsCardContent">
+                            <h6>Students</h6>
+                            <h1>Meet New Faces</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis harum adipisci doloremque beatae nam obcaecati consequuntur illum, autem voluptatibus est esse vitae aut reprehenderit soluta quod molestiae asperiores facere. <span><Link className="link" to='/blog-detail'>Read More</Link></span> </p> 
+                        </div>
+                        <div className="mainBlogsCardImg">
+                            <img src={why4} alt="" />
+                        </div>
+                    </div>
+                    <hr />
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
             {/* BLOGS */}
 
 
