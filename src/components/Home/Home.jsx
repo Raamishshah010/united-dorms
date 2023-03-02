@@ -10,7 +10,11 @@ import star from './assets/star.png';
 import map from './assets/map.png';
 import creditCard from './assets/creditCard.png';
 import crown from './assets/crown.png';
-import why1 from './assets/why1.png';
+import why1 from './assets/why1.jpg';
+import why2 from './assets/why2.jpg';
+import why3 from './assets/why3.jpg';
+import why4 from './assets/why4.jpg';
+import Footer from '../utils/Footer/Footer';
 
 
 
@@ -152,18 +156,43 @@ const Home = () => {
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6">
                             <div className="row">
-                                <div className="col-sm-12 col-md-6 col-lg-6">
+
+                                <div className="col-sm-12 col-md-6 col-lg-6 mt-3">
                                     <div className="why1">
-                                        <img src={why1} alt="" />
+                                        <img src={why1} className="img-fluid" alt="" />
                                     </div>
                                 </div>
-                                <div className="col-sm-12 col-md-6 col-lg-6">Hello</div>
+
+                                <div className="col-sm-12 col-md-6 col-lg-6 mt-3">
+                                    <div className="why2">
+                                        <img src={why2} className="img-fluid" alt="" />
+                                    </div>
+                                </div>
+
+                                <div className="col-sm-12 col-md-6 col-lg-6 mt-3">
+                                    <div className="why3">
+                                        <img src={why3} className="img-fluid" alt="" />
+                                    </div>
+                                </div>
+
+                                <div className="col-sm-12 col-md-6 col-lg-6 mt-3">
+                                    <div className="why4">
+                                        <img src={why4} className="img-fluid" alt="" />
+                                    </div>
+                                </div>
+
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+
+
+            {/* Footer */}
+
+            <Footer/>
         </>
     )
 }

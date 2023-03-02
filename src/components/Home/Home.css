@@ -218,3 +218,24 @@
     font-size: 2.6rem;
     color: var(--headingColor);
 }
+
+.whatWeDo img{
+    height: 200px;
+    width: 100%;
+}
+
+.whatWeDo .why1 img{
+    border-bottom-right-radius: 2rem;
+}
+
+.whatWeDo .why2 img{
+    border-bottom-left-radius: 2rem;
+}
+
+.whatWeDo .why3 img{
+    border-top-right-radius: 2rem;
+}
+
+.whatWeDo .why4 img{
+    border-top-left-radius: 2rem;
+}
