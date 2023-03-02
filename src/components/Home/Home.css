@@ -255,8 +255,34 @@
 
 /* TESTIMONIALS */
 
+.testimonials{
+    background-color: #f2fbfc;
+    padding-top: 5rem;
+    height: 100vh;
+}
 
 
+.testimonials .testimonialCard{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5rem 2rem;
+}
+
+.testimonials .testimonialCard p{
+    font-size: 1rem;
+}
+
+.testimonials .testimonialCard .testimonialBottom{
+    display: flex;
+    gap: 1rem;
+    font-size: .8rem;
+}
+
+.testimonials .testimonialCard .testimonialBottom img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 
 
 /* FEATURED BLOGS */

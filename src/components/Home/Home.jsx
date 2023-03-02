@@ -15,11 +15,22 @@ import why1 from './assets/why1.jpg';
 import why2 from './assets/why2.jpg';
 import why3 from './assets/why3.jpg';
 import why4 from './assets/why4.jpg';
+import Slider from 'react-slick';
 
 
 
 
 const Home = () => {
+
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    };
+
     return (
         <>
 
@@ -131,7 +142,7 @@ const Home = () => {
 
 
 
-                        
+
                     </div>
 
 
@@ -182,7 +193,7 @@ const Home = () => {
                                     </div>
                                 </div>
 
-                                
+
                             </div>
                         </div>
                     </div>
@@ -192,6 +203,32 @@ const Home = () => {
 
             {/* Testimonials */}
 
+            <section className="testimonials">
+                
+                    
+                        
+                        <Slider {...settings}>
+
+                            <div className='testimonialCard'>
+                                <h5>Super Helpful !!!!</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
+
+                                <div className="testimonialBottom">
+                                    <div className="clientImg">
+                                        <img src={why3} width="40px" height="40px" alt="client Img" />
+                                    </div>
+                                    <div className="clientInfo">
+                                        <h6>Anna Gates</h6>
+                                        <p>Web Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </Slider>
+                    
+                
+            </section>
 
             {/* BLOGS */}
 
@@ -218,7 +255,7 @@ const Home = () => {
                                         <p>7 mins read - September 20</p>
                                         <div className="cardIcon">
                                             <span >
-                                                <FiArrowRight className="icon"/>
+                                                <FiArrowRight className="icon" />
                                             </span>
                                         </div>
                                     </div>
@@ -241,7 +278,7 @@ const Home = () => {
                                         <p>7 mins read - September 20</p>
                                         <div className="cardIcon">
                                             <span >
-                                                <FiArrowRight className="icon"/>
+                                                <FiArrowRight className="icon" />
                                             </span>
                                         </div>
                                     </div>
@@ -264,7 +301,7 @@ const Home = () => {
                                         <p>7 mins read - September 20</p>
                                         <div className="cardIcon">
                                             <span >
-                                                <FiArrowRight className="icon"/>
+                                                <FiArrowRight className="icon" />
                                             </span>
                                         </div>
                                     </div>
@@ -275,7 +312,7 @@ const Home = () => {
                         </div>
 
 
-                        
+
                     </div>
 
                 </div>
@@ -284,7 +321,7 @@ const Home = () => {
 
             {/* Footer */}
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
