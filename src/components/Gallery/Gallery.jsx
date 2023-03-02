@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Footer from '../utils/Footer/Footer';
 import './Gallery.css';
 
 
@@ -39,7 +40,7 @@ const Gallery = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=First slide&bg=373940"
+                                src="./homeBg.jpg"
                                 alt="First slide"
                             />
                             
@@ -47,7 +48,7 @@ const Gallery = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=282c34"
+                                src="./homeBg.jpg"
                                 alt="Second slide"
                             />
 
@@ -56,7 +57,7 @@ const Gallery = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="holder.js/800x400?text=Third slide&bg=20232a"
+                                src="./homeBg.jpg"
                                 alt="Third slide"
                             />
 
@@ -66,6 +67,36 @@ const Gallery = () => {
 
                 </div>
             </section>
+
+
+            {/* Gallery Images */}
+            <section className="gallerySecondary">
+                <div className="container">
+                    <div className="row">
+
+                        <div className="col-sm-12 col-md-6 col-lg-6">
+                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-6">
+                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-6">
+                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                        </div>
+
+                        <div className="col-sm-12 col-md-6 col-lg-6">
+                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <Footer/>
         </>
     )
 }
