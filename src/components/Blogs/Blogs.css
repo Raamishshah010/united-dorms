@@ -1,0 +1,10 @@
+.blogs h1{
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--headingColor);
+    font-weight: 700;
+}
+
+.heading{
+    color: var(--primaryColor);
+}

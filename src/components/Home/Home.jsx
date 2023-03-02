@@ -47,7 +47,7 @@ const Home = () => {
 
                             <Nav.Link className="navLink"><Link className="navText" to="/">Testimonials</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/">About</Link></Nav.Link>
-                            <Nav.Link className="navLink"><Link className="navText" to="/">Blogs</Link></Nav.Link>
+                            <Nav.Link className="navLink"><Link className="navText" to="/blogs">Blogs</Link></Nav.Link>
 
 
                         </Nav>
