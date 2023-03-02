@@ -15,14 +15,14 @@ const Home = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto navLinks">
                             <Nav.Link className="navLink active"><Link className="navText" to="/">Home</Link></Nav.Link>
-                            
+
                             <Nav.Link className="navLink"><Link className="navText" to="/">Gallery</Link></Nav.Link>
-                            
+
                             <Nav.Link className="navLink"><Link className="navText" to="/">Testimonials</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/">About</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/">Blogs</Link></Nav.Link>
-                            
-                            
+
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -31,16 +31,16 @@ const Home = () => {
 
             {/* HERO SECTION */}
             <section className='hero'>
-            <div className="container">
+                <div className="container">
 
-            <h5>About <span className="heroText">United</span> Dorms</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore alias consectetur at, velit minima aspernatur, voluptas, dicta porro commodi error enim a quia molestias animi ipsa dolor vero aut?</p>
+                    <h5>About <span className="heroText">United</span> Dorms</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore alias consectetur at, velit minima aspernatur, voluptas, dicta porro commodi error enim a quia molestias animi ipsa dolor vero aut?</p>
 
-            <div className="heroBtn">
-                <button className='heroButtonOne'>Book Now</button>
-                <button className='heroButtonTwo'>Book Now</button>
-            </div>
-            </div>
+                    <div className="heroBtn">
+                        <button className='heroButtonOne'>Book Now</button>
+                        <button className='heroButtonTwo'>Book Now</button>
+                    </div>
+                </div>
             </section>
 
             {/* FEATURE SECTION */}
@@ -50,7 +50,28 @@ const Home = () => {
                     <div className="featureBadge">
                         <h6>Features</h6>
                     </div>
-                        <h1>The Comfort Of Your <span className='link'>Home</span></h1>
+                    <h1>The Comfort of your <span className='link'>Home</span></h1>
+
+
+                    <div className="row">
+                        <div className="col-sm-12 col-md-6 col-lg-3">
+                            <div className="featureCard">
+                                <div className="featureCardImg">
+
+                                </div>
+
+                                <div className="featureCardContent">
+                                    <h5>New Title</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab error voluptatem porro animi optio dolor sit.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+
                 </div>
             </section>
 
