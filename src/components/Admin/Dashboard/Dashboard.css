@@ -78,3 +78,42 @@
     font-weight: 700;
     color: var(--headingColor);
 }
+
+
+
+/* dashboardCards */
+
+.dashboardCards{
+    margin-top: 5rem;
+}
+
+
+.dashboardCard{
+    border: 1px solid var(--headingColor);
+    font-size: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.dashboardCard h5{
+    font-weight: 700;
+}
+
+.dashboardCard small{
+    font-size: .8rem;
+    color: #6c6c6c;
+}
+
+.dashboardCard p{
+    font-size: .9rem;
+    color: #202020;
+    font-weight: 600;
+}
+
+.dashboardCard .accrpt{
+    font-size: .9rem;
+    color: #202020;
+    font-weight: 700;
+    cursor: pointer;
+}
