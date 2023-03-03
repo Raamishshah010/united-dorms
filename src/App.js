@@ -9,6 +9,7 @@ import Gallery from './components/Gallery/Gallery';
 import BlogDetail from './components/BlogDetail/BlogDetail';
 import GalleryDetail from './components/GalleryDetail/GalleryDetail';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
+import AddDorm from './components/Admin/AddDorm/AddDorm';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
 
           {/* ADMIN DASHBOARD */}
           <Route path="/admin/dashboard" element={<Dashboard/>} />
+          <Route path="/admin/add-dorm" element={<AddDorm/>} />
 
 
         </Routes>
