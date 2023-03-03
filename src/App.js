@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Blogs from './components/Blogs/Blogs';
 import Gallery from './components/Gallery/Gallery';
 import BlogDetail from './components/BlogDetail/BlogDetail';
+import GalleryDetail from './components/GalleryDetail/GalleryDetail';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/blogs" element={<Blogs/>} />
           <Route path="/blog-detail" element={<BlogDetail/>} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/gallery-detail" element={<GalleryDetail/>} />
 
         </Routes>
       </Router>

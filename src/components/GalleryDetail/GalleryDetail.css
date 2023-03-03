@@ -1,0 +1,15 @@
+
+.galleryDetailMain{
+    margin-block: 3rem;
+    font-size: .9rem;
+}
+
+.galleryDetailMain h6{
+    font-size: 2rem;
+}
+
+.galleryDetailMain h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--headingColor);
+}
