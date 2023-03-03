@@ -43,7 +43,7 @@ const Gallery = () => {
                                 src="./homeBg.jpg"
                                 alt="First slide"
                             />
-                            
+
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
@@ -52,7 +52,7 @@ const Gallery = () => {
                                 alt="Second slide"
                             />
 
-                            
+
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
@@ -61,7 +61,7 @@ const Gallery = () => {
                                 alt="Third slide"
                             />
 
-                            
+
                         </Carousel.Item>
                     </Carousel>
 
@@ -75,20 +75,21 @@ const Gallery = () => {
                     <div className="row">
 
                         <div className="col-sm-12 col-md-6 col-lg-6">
-                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                            <Link to='/gallery-detail'><img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" /></Link> 
                         </div>
 
                         <div className="col-sm-12 col-md-6 col-lg-6">
-                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                            <Link to='/gallery-detail'><img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" /></Link> 
                         </div>
 
                         <div className="col-sm-12 col-md-6 col-lg-6">
-                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                            <Link to='/gallery-detail'><img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" /></Link> 
                         </div>
 
                         <div className="col-sm-12 col-md-6 col-lg-6">
-                            <img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" />
+                            <Link to='/gallery-detail'><img src="./homeBg.jpg" className="galleryShowImg img-fluid" alt="" /></Link> 
                         </div>
+
 
 
                     </div>
@@ -96,7 +97,7 @@ const Gallery = () => {
             </section>
 
             {/* Footer */}
-            <Footer/>
+            <Footer />
         </>
     )
 }
