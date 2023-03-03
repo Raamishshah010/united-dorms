@@ -4,6 +4,8 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Footer from '../utils/Footer/Footer';
 
+import whatsapp from './assets/whatsapp.png'
+
 const GalleryDetail = () => {
     return (
         <>
@@ -69,6 +71,15 @@ const GalleryDetail = () => {
 
                     <p className="text-center"><button className='heroButtonOne'>Book Now</button></p>
 
+
+                    <div className="numberDetails">
+                        <div className="numberIcon">
+                            <img src={whatsapp} alt="" />
+                        </div>
+                        <div className="numberDetail">
+                            <h5>+92 12451251</h5>
+                        </div>
+                    </div>
                 </div>
                 </div>
             </section>
