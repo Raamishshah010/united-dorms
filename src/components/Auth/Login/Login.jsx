@@ -30,7 +30,7 @@ const Login = () => {
             <span className="forgotLink">Forgot Password?</span>
 
             <div className="loginBtn">
-                <Link to="/home" className="signInBtn">Sign In</Link>
+                <Link to="/" className="signInBtn">Sign In</Link>
             </div>
 
             <h6>New To United Dorms? <Link className='link' to="/register">Sign Up</Link></h6>
