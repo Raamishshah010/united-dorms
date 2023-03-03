@@ -8,6 +8,7 @@ import Blogs from './components/Blogs/Blogs';
 import Gallery from './components/Gallery/Gallery';
 import BlogDetail from './components/BlogDetail/BlogDetail';
 import GalleryDetail from './components/GalleryDetail/GalleryDetail';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
           <Route path="/blog-detail" element={<BlogDetail/>} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/gallery-detail" element={<GalleryDetail/>} />
+
+
+          {/* ADMIN DASHBOARD */}
+          <Route path="/admin/dashboard" element={<Dashboard/>} />
+
 
         </Routes>
       </Router>

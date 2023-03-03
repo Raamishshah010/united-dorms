@@ -1,11 +1,13 @@
 .LoginNavbar{
     background-color: var(--primaryColor);
     height: 3.6rem;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
     color: #fff;
     font-weight: 400;
+    padding: 1rem;
 }
 
 
