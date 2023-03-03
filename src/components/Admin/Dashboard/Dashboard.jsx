@@ -4,6 +4,9 @@ import './Dashboard.css';
 import logout from './assets/logout.png'
 import { Link } from 'react-router-dom';
 
+import { BiTrendingUp, BiTrendingDown } from "react-icons/bi";
+
+
 const Dashboard = () => {
     return (
         <>
@@ -15,6 +18,8 @@ const Dashboard = () => {
                 </div>
             </div>
 
+
+            {/* Dashboard  */}
 
             <div className="dashboard">
                 <div className="container">
@@ -37,6 +42,47 @@ const Dashboard = () => {
                 </div>
             </div>
 
+        {/* Dashboard Stats */}
+        
+        <section className="dashboardStats">
+            <div className="container">
+                <h5>Quick Stats</h5>
+
+                <div className="row mt-5">
+                    
+                    <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="statsCard">
+                            <h6>Total Bookings</h6>
+                            <h1>28,523</h1>
+                        </div>
+                    </div>
+                    
+                    <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="statsCard">
+                            <h6>Pending Approval</h6>
+                            <h1 className="colorDanger">12</h1>
+                        </div>
+                    </div>
+                    
+                    <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="statsCard">
+                            <h6>New Students This Month</h6>
+                            <h1>89 <span className="link statsGraph"> <BiTrendingUp/></span></h1>
+                        </div>
+                    </div>
+                    
+                    <div className="col-sm-12 col-md-6 col-lg-3">
+                        <div className="statsCard">
+                            <h6>Returning Students</h6>
+                            <h1>47% <span className="colorDanger statsGraph"> <BiTrendingDown/></span></h1>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </section>
 
         </>
     )
