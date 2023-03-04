@@ -10,6 +10,7 @@ import BlogDetail from './components/BlogDetail/BlogDetail';
 import GalleryDetail from './components/GalleryDetail/GalleryDetail';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import AddDorm from './components/Admin/AddDorm/AddDorm';
+import AddBlog from './components/Admin/AddBlog/AddBlog';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           {/* ADMIN DASHBOARD */}
           <Route path="/admin/dashboard" element={<Dashboard/>} />
           <Route path="/admin/add-dorm" element={<AddDorm/>} />
+          <Route path="/admin/add-blog" element={<AddBlog/>} />
 
 
         </Routes>
