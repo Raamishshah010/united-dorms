@@ -11,6 +11,8 @@ import GalleryDetail from './components/GalleryDetail/GalleryDetail';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import AddDorm from './components/Admin/AddDorm/AddDorm';
 
+
+
 function App() {
   return (
     <div className="App">

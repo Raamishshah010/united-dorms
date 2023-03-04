@@ -42,14 +42,10 @@ const Home = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto navLinks">
                             <Nav.Link className="navLink active"><Link className="navText" to="/">Home</Link></Nav.Link>
-
                             <Nav.Link className="navLink"><Link className="navText" to="/gallery">Gallery</Link></Nav.Link>
-
                             <Nav.Link className="navLink"><Link className="navText" to="/">Testimonials</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/">About</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/blogs">Blogs</Link></Nav.Link>
-
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -69,7 +65,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            
             {/* FEATURE SECTION */}
 
             <section className="feature">
