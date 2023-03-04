@@ -1,0 +1,51 @@
+.addBlogMain {
+    margin-top: 6rem;
+    text-align: center;
+}
+.addBlogMain h1{
+    font-size: 2rem;
+    color: var(--headingColor);
+    font-weight: 700;
+}
+
+.backIcon {
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs .input input {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid #333333;
+    outline: none;
+    width: 379px;
+}
+
+.inputs .input textarea {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid #333333;
+    outline: none;
+}
+
+.input button{
+    font-size: 1.2rem;
+    padding: .7rem 5rem;
+    margin-top: 2rem;
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    color: #fff;
+    border-radius: 3rem;
+}
