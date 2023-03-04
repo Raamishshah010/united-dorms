@@ -2,3 +2,49 @@
     --primaryColor: #7eb168;
     --headingColor: #4a4a4a;
 }
+
+
+
+/* Responsiveness */
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    .loginField{
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    
+    .hero p {
+        font-size: 1.2rem;
+        width: 100% !important;
+        color: #3d3d3d;
+    }
+}
+
+@media only screen and (max-width: 665px){
+    /*Tablets [601px -> 1200px]*/
+    .loginField{
+        width: 80% !important;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        width: 100% !important;
+        color: #3d3d3d;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    /*Tablets [601px -> 1200px]*/
+    .loginField{
+        width: 90% !important;
+    }
+
+    .forgotLink {
+        transform: translateX(5rem) !important;
+        
+    }
+}
