@@ -6,6 +6,8 @@ import './AddDorm.css'
 import { MdKeyboardBackspace } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import Footer from '../../utils/Footer/Footer';
+import Form from 'react-bootstrap/Form';
+
 
 const AddDorm = () => {
     return (
@@ -51,7 +53,38 @@ const AddDorm = () => {
                             </div>
                         </div>
 
+                        <div className="radioSelect">
+                            <h5>Choose The Type Of Room</h5>
 
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <Form.Check
+                                        inline
+                                        label="Single Room"
+                                        type="radio"
+                                    />
+
+                                </div>
+                                <div className="col">
+                                    <Form.Check
+                                        inline
+                                        label="Double Room"
+                                        type="radio"
+                                    />
+
+                                </div>
+                                <div className="col">
+                                    <Form.Check
+                                        inline
+                                        label="Single Room"
+                                        type="radio"
+                                    />
+
+                                </div>
+                            </div>
+
+
+                        </div>
 
 
 
