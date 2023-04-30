@@ -2,7 +2,8 @@
     margin-top: 6rem;
     text-align: center;
 }
-.addBlogMain h1{
+
+.addBlogMain h1 {
     font-size: 2rem;
     color: var(--headingColor);
     font-weight: 700;
@@ -40,7 +41,7 @@
     outline: none;
 }
 
-.input button{
+.input button {
     font-size: 1.2rem;
     padding: .7rem 5rem;
     margin-top: 2rem;
@@ -48,4 +49,48 @@
     border: 1px solid var(--primaryColor);
     color: #fff;
     border-radius: 3rem;
+}
+
+.btn-map {
+    background-color: #dedede !important;
+    color: #828282 !important;
+    border: none !important;
+    font-weight: 700;
+}
+
+.inputFile {
+    position: relative;
+
+}
+
+.inputFile p {
+    width: 370px;
+    max-width: 600px;
+    margin-top: 1rem;
+    border: 1px solid #2c2c2c;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    text-align: left
+}
+
+.overflowText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hiddenInput {
+    opacity: 0;
+    z-index: 10;
+}
+
+.placeholderImage{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    transform: translate(-1rem , 2rem)
 }

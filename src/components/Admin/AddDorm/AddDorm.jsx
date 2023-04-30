@@ -1,5 +1,6 @@
 import React from 'react';
 import logout from './assets/logout.png';
+import image from './assets/image.png';
 import './AddDorm.css'
 
 import { MdKeyboardBackspace } from "react-icons/md";
@@ -34,9 +35,30 @@ const AddDorm = () => {
                         </div>
 
                         <div className="input">
+                            <button className='btn btn-map'>Select Location Via Maps</button>
+
+                        </div>
+
+
+
+                        <div className="input inputFile">
+                            <input type="file" className="hiddenInput" />
+                            <div className="overflowText">
+                                <p>Add Image Or Video</p>
+
+                                <img className="placeholderImage" src={image} alt="" />
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div className="input">
                             <input type="text" id='dormId' placeholder="Enter Rent Details $$$" />
                         </div>
-                        
+
                         <div className="input">
                             <button className='addDorm'>Save</button>
                         </div>
@@ -45,8 +67,8 @@ const AddDorm = () => {
                 </div>
             </div>
 
-        {/* FOOTER */}
-        <Footer/>
+            {/* FOOTER */}
+            <Footer />
         </>
     )
 }
