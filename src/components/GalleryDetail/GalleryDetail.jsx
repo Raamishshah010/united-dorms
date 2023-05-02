@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './GalleryDetail.css'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -7,10 +7,18 @@ import Footer from '../utils/Footer/Footer';
 import whatsapp from './assets/whatsapp.png'
 
 const GalleryDetail = () => {
+
+    const [toggleButton, setToggleButton] = useState('hide')
+
+    const handleButton = () => {
+        console.log('as');
+        setToggleButton('show')
+    }
+
     return (
         <>
-        {/* NAVBAR */}
-        <Navbar expand="lg" className="navbar">
+            {/* NAVBAR */}
+            <Navbar expand="lg" className="navbar">
                 <Container>
                     <Navbar.Brand><Link className='navLogo'>United Dorms</Link> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -54,39 +62,39 @@ const GalleryDetail = () => {
                     </div>
 
                     <div className="container mt-5">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta atque voluptatum autem ut maiores. Officiis reiciendis quas accusamus similique aliquam, laborum voluptatum repudiandae illo fugiat aperiam unde labore nisi quasi!</p>
-                    <br />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
-                    <br />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
-
-                    
-                    <br />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta atque voluptatum autem ut maiores. Officiis reiciendis quas accusamus similique aliquam, laborum voluptatum repudiandae illo fugiat aperiam unde labore nisi quasi!</p>
-                    <br />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
-                    <br />
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
-                    
-
-                    <p className="text-center"><button className='heroButtonOne'>Book Now</button></p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta atque voluptatum autem ut maiores. Officiis reiciendis quas accusamus similique aliquam, laborum voluptatum repudiandae illo fugiat aperiam unde labore nisi quasi!</p>
+                        <br />
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
+                        <br />
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
 
 
-                    <div className="numberDetails">
-                        <div className="numberIcon">
-                            <img src={whatsapp} alt="" />
-                        </div>
-                        <div className="numberDetail">
-                            <h5>+92 12451251</h5>
+                        <br />
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta atque voluptatum autem ut maiores. Officiis reiciendis quas accusamus similique aliquam, laborum voluptatum repudiandae illo fugiat aperiam unde labore nisi quasi!</p>
+                        <br />
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
+                        <br />
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam atque amet porro facere perferendis cupiditate obcaecati recusandae maiores architecto minima, quos aperiam, incidunt similique modi dolore quibusdam ullam itaque.</p>
+
+
+                        <p className="text-center"><button className='heroButtonOne' onClick={handleButton}>Book Now</button></p>
+
+
+                        <div className={`numberDetails ${toggleButton}`}>
+                            <div className="numberIcon">
+                                <img src={whatsapp} alt="" />
+                            </div>
+                            <div className="numberDetail">
+                                <h5>+92 12451251</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </section>
 
 
             {/* Footer */}
-            <Footer/>
+            <Footer />
         </>
     )
 }

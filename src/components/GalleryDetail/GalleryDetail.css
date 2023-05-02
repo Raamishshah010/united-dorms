@@ -34,3 +34,12 @@
 .numberDetails img{
     width: 40px;
 }
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
