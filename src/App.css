@@ -37,6 +37,31 @@
     }
 }
 
+@media only screen and (max-width: 465px){
+    /*Tablets [601px -> 1200px]*/
+    .loginField{
+        width: 90% !important;
+    }
+
+    .forgotLink {
+        transform: translateX(5rem) !important;
+        
+    }
+    .blogDetailMainTitle {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -39%) !important;
+        text-align: center;
+        font-size: 1rem;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
 @media only screen and (max-width: 375px){
     /*Tablets [601px -> 1200px]*/
     .loginField{
@@ -47,4 +72,17 @@
         transform: translateX(5rem) !important;
         
     }
+    .blogDetailMainTitle {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -39%) !important;
+        text-align: center;
+        font-size: 1rem;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
