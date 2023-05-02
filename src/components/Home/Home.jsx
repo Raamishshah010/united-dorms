@@ -23,12 +23,38 @@ import Slider from 'react-slick';
 const Home = () => {
 
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
+    let settings_3 = {
+        dots: false,
+        autoplay: false,
+        autoplaySpeed: 3000,
         slidesToShow: 3,
-        slidesToScroll: 3
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
@@ -65,7 +91,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
+
             {/* FEATURE SECTION */}
 
             <section className="feature">
@@ -200,81 +226,81 @@ const Home = () => {
             {/* Testimonials */}
 
             <section className="testimonials">
-                
-                        <div className="testimonialsBadge">
-                            <h6>Testimonials</h6>
+
+                <div className="testimonialsBadge">
+                    <h6>Testimonials</h6>
+                </div>
+                <h1 className='text-center'><span className='heading'>Trusted</span> By 100's <br /> Of Users
+                    <span className='userImg'> <img src="https://media.istockphoto.com/id/1200677760/photo/portrait-of-handsome-smiling-young-man-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=g_ZmKDpK9VEEzWw4vJ6O577ENGLTOcrvYeiLxi8mVuo=" width="30px" height="30px" alt="" /></span>
+
+                </h1>
+
+                <Slider {...settings_3}>
+
+                    <div className='testimonialCard'>
+                        <h5>Super Helpful !!!!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
+
+                        <div className="testimonialBottom">
+                            <div className="clientImg">
+                                <img src={why3} width="40px" height="40px" alt="client Img" />
+                            </div>
+                            <div className="clientInfo">
+                                <h6>Anna Gates</h6>
+                                <p>Web Designer</p>
+                            </div>
                         </div>
-                            <h1 className='text-center'><span className='heading'>Trusted</span> By 100's <br /> Of Users  
-                            <span className='userImg'> <img src="https://media.istockphoto.com/id/1200677760/photo/portrait-of-handsome-smiling-young-man-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=g_ZmKDpK9VEEzWw4vJ6O577ENGLTOcrvYeiLxi8mVuo=" width="30px" height="30px" alt="" /></span>
-                            
-                            </h1>
-                        
-                        <Slider {...settings}>
+                    </div>
 
-                            <div className='testimonialCard'>
-                                <h5>Super Helpful !!!!</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
+                    <div className='testimonialCard'>
+                        <h5>Super Helpful !!!!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
 
-                                <div className="testimonialBottom">
-                                    <div className="clientImg">
-                                        <img src={why3} width="40px" height="40px" alt="client Img" />
-                                    </div>
-                                    <div className="clientInfo">
-                                        <h6>Anna Gates</h6>
-                                        <p>Web Designer</p>
-                                    </div>
-                                </div>
+                        <div className="testimonialBottom">
+                            <div className="clientImg">
+                                <img src={why3} width="40px" height="40px" alt="client Img" />
                             </div>
-
-                            <div className='testimonialCard'>
-                                <h5>Super Helpful !!!!</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
-
-                                <div className="testimonialBottom">
-                                    <div className="clientImg">
-                                        <img src={why3} width="40px" height="40px" alt="client Img" />
-                                    </div>
-                                    <div className="clientInfo">
-                                        <h6>Anna Gates</h6>
-                                        <p>Web Designer</p>
-                                    </div>
-                                </div>
+                            <div className="clientInfo">
+                                <h6>Anna Gates</h6>
+                                <p>Web Designer</p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div className='testimonialCard'>
-                                <h5>Super Helpful !!!!</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
+                    <div className='testimonialCard'>
+                        <h5>Super Helpful !!!!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
 
-                                <div className="testimonialBottom">
-                                    <div className="clientImg">
-                                        <img src={why3} width="40px" height="40px" alt="client Img" />
-                                    </div>
-                                    <div className="clientInfo">
-                                        <h6>Anna Gates</h6>
-                                        <p>Web Designer</p>
-                                    </div>
-                                </div>
+                        <div className="testimonialBottom">
+                            <div className="clientImg">
+                                <img src={why3} width="40px" height="40px" alt="client Img" />
                             </div>
-
-                            <div className='testimonialCard'>
-                                <h5>Super Helpful !!!!</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
-
-                                <div className="testimonialBottom">
-                                    <div className="clientImg">
-                                        <img src={why3} width="40px" height="40px" alt="client Img" />
-                                    </div>
-                                    <div className="clientInfo">
-                                        <h6>Anna Gates</h6>
-                                        <p>Web Designer</p>
-                                    </div>
-                                </div>
+                            <div className="clientInfo">
+                                <h6>Anna Gates</h6>
+                                <p>Web Designer</p>
                             </div>
-                            
-                            
-                        </Slider>
-                    
-                
+                        </div>
+                    </div>
+
+                    <div className='testimonialCard'>
+                        <h5>Super Helpful !!!!</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt perferendis obcaecati veritatis consectetur aliquid alias, veniam cum! Quam veritatis repellat hic quas dolorem incidunt harum fuga obcaecati autem cum!</p>
+
+                        <div className="testimonialBottom">
+                            <div className="clientImg">
+                                <img src={why3} width="40px" height="40px" alt="client Img" />
+                            </div>
+                            <div className="clientInfo">
+                                <h6>Anna Gates</h6>
+                                <p>Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </Slider>
+
+
             </section>
 
             {/* BLOGS */}
