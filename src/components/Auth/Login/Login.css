@@ -25,24 +25,26 @@
     font-weight: 500;
 }
 
-.loginField{
+.loginField {
     margin-top: 2rem;
-    width: 30%;
+    width: 40%;
     color: var(--primaryColor);
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 1rem;
     border: 1px solid var(--primaryColor);
-    padding: 1rem;
+    padding: -0.5rem;
+    padding-inline: 2rem;
     border-radius: 3rem;
 }
-
-.loginField input{
+.loginField input {
     width: 100%;
     /* padding: 1rem; */
     border: none;
     outline: none;
+    transform: translateY(-8px);
+    background: transparent;
 }
 
 .forgotLink{
@@ -75,4 +77,14 @@
 .link{
     text-decoration: none;
     color: var(--primaryColor);
+}
+
+
+
+@media (max-width: 768px){
+    .loginField {
+        
+        width: 80% !important;
+        
+    }
 }
