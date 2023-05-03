@@ -38,3 +38,22 @@
     letter-spacing: .6rem;
     color: var(--headingColor);
 }
+
+
+/* RESPONSIVENESS */
+@media(max-width: 1150px) {
+    .mainBlogsCard{
+        flex-direction: column-reverse;
+    }
+    
+    
+}
+
+@media(max-width: 768px) {
+    .mainBlogsCard{
+        flex-direction: column-reverse;
+    }
+    .mainBlogsCard img{
+        width: 100%;
+    }
+}
