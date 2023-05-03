@@ -109,7 +109,7 @@ const Gallery = () => {
                                 <BiSearch />
                             </span>
 
-                            <input type="text" className="searchInput" />
+                            <input type="text" className="searchInput" placeholder="Search" />
                         </div>
                     </div>
 
