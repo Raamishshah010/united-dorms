@@ -1,0 +1,56 @@
+
+
+.userDashboard{
+    margin-top: 5rem;
+    font-size: .9rem;
+}
+
+.userDashboard .userDashboardContent{
+    margin-top: 5rem;
+    font-size: .9rem;
+}
+
+.userDashboard .userDashboardContent h5{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.userDashboard .userDashboardContent h1{
+    font-size: 3rem;
+    font-weight: 700;
+    /* margin: 0 !important; */
+}
+
+
+
+.studentInfoTable{
+    margin-top: 6rem;
+    border: 1px solid #393939;
+    border-radius: 2rem;
+    height: 100%;
+    margin-bottom: 5rem;
+}
+
+.studentInfoTable .studentTableTop{
+    text-align: center;
+    padding: 1rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.studentInfoTable .studentTableTop .editIcon{
+    float: right;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.studentInfoTable .studentInfoName h6{
+    border-top: 1px solid #393939;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.renewLink{
+    color: #393939;
+}

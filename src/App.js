@@ -12,6 +12,7 @@ import Dashboard from './components/Admin/Dashboard/Dashboard';
 import AddDorm from './components/Admin/AddDorm/AddDorm';
 import AddBlog from './components/Admin/AddBlog/AddBlog';
 import Register from './components/Auth/Register/Register';
+import UserDashboard from './components/UserDashboard/UserDashboard';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
+          <Route path="/student-dashboard" element={<UserDashboard/>} />
           <Route path="/blogs" element={<Blogs/>} />
           <Route path="/blog-detail" element={<BlogDetail/>} />
           <Route path="/gallery" element={<Gallery/>} />

@@ -40,7 +40,7 @@ const Register = () => {
 
 
             <div className="loginBtn">
-                <Link to="/login" className="signInBtn">Sign In</Link>
+                <Link to="/student-dashboard" className="signInBtn">Sign In</Link>
             </div>
 
             <h6>Already Have an Account? <Link className='link' to="/login">Sign in</Link></h6>
