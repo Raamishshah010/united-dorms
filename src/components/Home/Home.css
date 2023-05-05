@@ -1,4 +1,20 @@
+.userImg_1{
+    z-index: 1000;
+    position: relative;
+}
+.userImg_2{
+    transform: translateX(-1rem);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
 
+}
+.userImg_3{
+    transform: translateX(-1.9rem);
+    display: inline-block;
+    z-index: -1;
+
+}
 
 .cardLink{
     color: var(--headingColor);
