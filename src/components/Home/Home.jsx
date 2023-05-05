@@ -24,8 +24,8 @@ const Home = () => {
 
 
     let settings_3 = {
-        dots: false,
-        autoplay: false,
+        dots: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 3,
 

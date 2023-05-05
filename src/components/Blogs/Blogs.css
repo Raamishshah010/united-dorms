@@ -40,6 +40,33 @@
 }
 
 
+
+.customButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 5rem;
+}
+
+.customButton .btn-custom{
+    background-color: transparent;
+    border: 2px solid #6d6d6d !important;
+    padding: .5rem 2rem;
+    color: #515151;
+    border: none;
+    margin-right: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
 /* RESPONSIVENESS */
 @media(max-width: 1150px) {
     .mainBlogsCard{

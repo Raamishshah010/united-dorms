@@ -12,7 +12,7 @@
 
 .footer .contactBtn button {
     background-color: var(--primaryColor);
-    padding: 1rem 3rem;
+    padding: .7rem 3rem;
     font-size: .8rem;
     font-weight: 600;
     text-transform: uppercase;
