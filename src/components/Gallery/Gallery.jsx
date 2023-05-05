@@ -59,7 +59,7 @@ const Gallery = () => {
                         <div className="col-lg-4">
                             <Form.Check
                                 inline
-                                label="Single Room"
+                                label="Suit"
                                 type="radio"
                             />
 
