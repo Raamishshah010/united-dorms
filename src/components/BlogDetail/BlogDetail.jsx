@@ -22,7 +22,7 @@ const BlogDetail = () => {
                             <Nav.Link className="navLink"><Link className="navText" to="/">Testimonials</Link></Nav.Link>
                             <Nav.Link className="navLink"><Link className="navText" to="/">About</Link></Nav.Link>
                             <Nav.Link className="navLink active"><Link className="navText" to="/blogs">Blogs</Link></Nav.Link>
-
+                            <Nav.Link className="navLink"><Link className="navText" to="/student-dashboard">Profile</Link></Nav.Link>
 
                         </Nav>
                     </Navbar.Collapse>
