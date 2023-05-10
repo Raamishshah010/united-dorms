@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css';
 
 import { RiLockFill, RiMailFill } from "react-icons/ri";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from '../../utils/Footer/Footer';
 import axios from 'axios';
 
@@ -13,16 +13,17 @@ const Login = () => {
     const [responseData, setResponseData] = useState([]);
 
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
     const getEmail = (e) => {
         setEmail(e.target.value);
-        
-    }
 
+    }
+    const [password, setPassword] = useState('');
     const getPassword = (e) => {
         setPassword(e.target.value);
     }
+
+    const navigate = useNavigate()
+
 
 
     const handleLogin = async () => {
@@ -32,14 +33,35 @@ const Login = () => {
             password
         }
 
-        await axios.post('http://3.84.54.19/api/user_login' , data)
-            .then(response => {
-                setResponseData(response.data);
-                console.log(responseData);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+        if (email === "admin@admin.com") {
+            await axios.post('http://3.84.54.19/api/user_login', data)
+                .then(response => {
+                    setResponseData(response.data);
+
+                    navigate('/admin/dashboard')
+
+                })
+                .catch(error => {
+                    window.alert(error.message);
+                });
+        } else {
+            try {
+                await axios.post('http://3.84.54.19/api/user_login', data)
+                    .then(response => {
+                        setResponseData(response.data);
+
+                        navigate('/')
+
+                    })
+                    .catch(error => {
+                        window.alert(error.message);
+                    });
+            } catch (error) {
+                window.alert(error.message);
+
+            }
+
+        }
 
 
     }
