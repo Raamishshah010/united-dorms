@@ -49,7 +49,7 @@ const Login = () => {
                 await axios.post('http://3.84.54.19/api/user_login', data)
                     .then(response => {
                         setResponseData(response.data);
-
+                        console.log(responseData);
                         navigate('/')
 
                     })
