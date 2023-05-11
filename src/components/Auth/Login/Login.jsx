@@ -51,6 +51,7 @@ const Login = () => {
                         setResponseData(response.data);
                         console.log(responseData);
                         navigate('/')
+                        
 
                     })
                     .catch(error => {
